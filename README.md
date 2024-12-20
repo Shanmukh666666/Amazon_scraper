@@ -145,11 +145,14 @@ CAPTCHA is used by Amazon to prevent automated access. The script includes a mec
 Use Environment Variables Securely:
 
 Store your Amazon credentials securely in a .env file and avoid hardcoding sensitive information directly in the script. Ensure that the .env file is not shared or uploaded to version control systems.
+Note on Price Format:
+
+The prices scraped from Amazon are provided in Unicode format. This ensures that any special characters, currency symbols, or formatting used by Amazon are accurately captured and stored in the JSON output. 
+
 Update ChromeDriver:
 
 Keep your ChromeDriver updated to match the version of your installed Chrome browser. This helps in avoiding compatibility issues.
 Monitor for Changes on Amazon Pages:
-
 Amazon's website structure may change, which could break the scraper. Regularly monitor the script's performance and update the selectors as needed.
 Rate Limiting and IP Blocking:
 
